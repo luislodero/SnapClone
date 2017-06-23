@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043527EF7214F71DEDDB22A4 /* Pods_SnapClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB285EE80665216545F0ACD4 /* Pods_SnapClone.framework */; };
 		F62B8BE31EFC382600749F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B8BE21EFC382600749F42 /* AppDelegate.swift */; };
-		F62B8BE51EFC382600749F42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B8BE41EFC382600749F42 /* ViewController.swift */; };
+		F62B8BE51EFC382600749F42 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62B8BE41EFC382600749F42 /* SignInViewController.swift */; };
 		F62B8BE81EFC382600749F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62B8BE61EFC382600749F42 /* Main.storyboard */; };
 		F62B8BEB1EFC382600749F42 /* SnapClone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F62B8BE91EFC382600749F42 /* SnapClone.xcdatamodeld */; };
 		F62B8BED1EFC382600749F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62B8BEC1EFC382600749F42 /* Assets.xcassets */; };
 		F62B8BF01EFC382600749F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62B8BEE1EFC382600749F42 /* LaunchScreen.storyboard */; };
+		F62B8BF81EFC3C8200749F42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F62B8BF71EFC3C8200749F42 /* GoogleService-Info.plist */; };
+		F6E510FF1EFDD272006CCA86 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E510FE1EFDD272006CCA86 /* SnapsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1AFCFB3E57B2A532E36CFBE /* Pods-SnapClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapClone/Pods-SnapClone.debug.xcconfig"; sourceTree = "<group>"; };
+		CB285EE80665216545F0ACD4 /* Pods_SnapClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E99A57992F4EA16089D9C42B /* Pods-SnapClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnapClone/Pods-SnapClone.release.xcconfig"; sourceTree = "<group>"; };
 		F62B8BDF1EFC382600749F42 /* SnapClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62B8BE21EFC382600749F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F62B8BE41EFC382600749F42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F62B8BE41EFC382600749F42 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		F62B8BE71EFC382600749F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F62B8BEA1EFC382600749F42 /* SnapClone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SnapClone.xcdatamodel; sourceTree = "<group>"; };
 		F62B8BEC1EFC382600749F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F62B8BEF1EFC382600749F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F62B8BF11EFC382600749F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F62B8BF71EFC3C8200749F42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F6E510FE1EFDD272006CCA86 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				043527EF7214F71DEDDB22A4 /* Pods_SnapClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AE5F820E034DCBC8C66B361 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1AFCFB3E57B2A532E36CFBE /* Pods-SnapClone.debug.xcconfig */,
+				E99A57992F4EA16089D9C42B /* Pods-SnapClone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9063625C4D07D4F0D7137205 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB285EE80665216545F0ACD4 /* Pods_SnapClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F62B8BD61EFC382500749F42 = {
 			isa = PBXGroup;
 			children = (
 				F62B8BE11EFC382600749F42 /* SnapClone */,
 				F62B8BE01EFC382600749F42 /* Products */,
+				1AE5F820E034DCBC8C66B361 /* Pods */,
+				9063625C4D07D4F0D7137205 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +85,13 @@
 			isa = PBXGroup;
 			children = (
 				F62B8BE21EFC382600749F42 /* AppDelegate.swift */,
-				F62B8BE41EFC382600749F42 /* ViewController.swift */,
+				F62B8BE41EFC382600749F42 /* SignInViewController.swift */,
 				F62B8BE61EFC382600749F42 /* Main.storyboard */,
+				F6E510FE1EFDD272006CCA86 /* SnapsViewController.swift */,
 				F62B8BEC1EFC382600749F42 /* Assets.xcassets */,
 				F62B8BEE1EFC382600749F42 /* LaunchScreen.storyboard */,
 				F62B8BF11EFC382600749F42 /* Info.plist */,
+				F62B8BF71EFC3C8200749F42 /* GoogleService-Info.plist */,
 				F62B8BE91EFC382600749F42 /* SnapClone.xcdatamodeld */,
 			);
 			path = SnapClone;
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F62B8BF41EFC382600749F42 /* Build configuration list for PBXNativeTarget "SnapClone" */;
 			buildPhases = (
+				E25D95AD19E4CD0697C15B40 /* [CP] Check Pods Manifest.lock */,
 				F62B8BDB1EFC382500749F42 /* Sources */,
 				F62B8BDC1EFC382500749F42 /* Frameworks */,
 				F62B8BDD1EFC382500749F42 /* Resources */,
+				67AEB20D85F7159799040A23 /* [CP] Embed Pods Frameworks */,
+				F28511A0E64278AE46A5EB09 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F62B8BF01EFC382600749F42 /* LaunchScreen.storyboard in Resources */,
+				F62B8BF81EFC3C8200749F42 /* GoogleService-Info.plist in Resources */,
 				F62B8BED1EFC382600749F42 /* Assets.xcassets in Resources */,
 				F62B8BE81EFC382600749F42 /* Main.storyboard in Resources */,
 			);
@@ -135,13 +169,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67AEB20D85F7159799040A23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapClone/Pods-SnapClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E25D95AD19E4CD0697C15B40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F28511A0E64278AE46A5EB09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnapClone/Pods-SnapClone-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F62B8BDB1EFC382500749F42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E510FF1EFDD272006CCA86 /* SnapsViewController.swift in Sources */,
 				F62B8BEB1EFC382600749F42 /* SnapClone.xcdatamodeld in Sources */,
-				F62B8BE51EFC382600749F42 /* ViewController.swift in Sources */,
+				F62B8BE51EFC382600749F42 /* SignInViewController.swift in Sources */,
 				F62B8BE31EFC382600749F42 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +348,7 @@
 		};
 		F62B8BF51EFC382600749F42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1AFCFB3E57B2A532E36CFBE /* Pods-SnapClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YA7HJT36Y8;
@@ -278,6 +362,7 @@
 		};
 		F62B8BF61EFC382600749F42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E99A57992F4EA16089D9C42B /* Pods-SnapClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YA7HJT36Y8;
@@ -308,6 +393,7 @@
 				F62B8BF61EFC382600749F42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
