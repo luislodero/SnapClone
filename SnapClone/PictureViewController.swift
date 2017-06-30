@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class PictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -51,6 +52,45 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     
     @IBAction func nextTapped(_ sender: Any) {
+        
+        nextButton.isEnabled = false
+        
+        let imagesFolder =
+            Storage.storage().reference().child("images")
+        
+        let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)!
+        
+        imagesFolder.child("images.png").putData(imageData, metadata: nil, completion: {(metadata, error) in
+            print("We tried to upload")
+            if error != nil {
+                print("We had an error: \(String(describing: error))")
+            }else{
+                
+                print(metadata?.downloadURL())
+                
+                 self.performSegue(withIdentifier: "selectUsersegue", sender: nil)
+            }
+        })
+
+        
+        performSegue(withIdentifier: "selectUsersegue", sender: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let imagesFolder =
+            Storage.storage().reference().child("images")
+        
+        let imageData = UIImagePNGRepresentation(imageView.image!)!
+        
+        
+        imagesFolder.child("\(NSUUID().uuidString).jpg").putData(imageData, metadata: nil, completion: {(metadata, error) in
+            print("We tried to upload")
+            if error != nil {
+                print("We had an error: \(String(describing: error))")
+            }
+        })
     }
     
 }
