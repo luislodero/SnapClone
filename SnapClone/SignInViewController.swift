@@ -20,6 +20,10 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+    
+
+        
     }
     
     @IBAction func turnUpTapped(_ sender: Any) {
@@ -37,6 +41,15 @@ class SignInViewController: UIViewController {
 
                     }else{
                         print("Created user successfully")
+                        
+                    Database.database().reference().child("users").child(user!.uid).child("email").setValue(user!.email!)
+                        
+                        
+                        
+                    
+                        
+                        
+                        
                         self.performSegue(withIdentifier: "signinsegue", sender: nil)
                     }
                 })
