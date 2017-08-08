@@ -16,6 +16,7 @@
 		F62B8BF01EFC382600749F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62B8BEE1EFC382600749F42 /* LaunchScreen.storyboard */; };
 		F62B8BF81EFC3C8200749F42 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F62B8BF71EFC3C8200749F42 /* GoogleService-Info.plist */; };
 		F632520F1F06BF6600BFB3B1 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F632520E1F06BF6600BFB3B1 /* SelectUserViewController.swift */; };
+		F662540D1F3A4B5A00A28B0A /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = F662540C1F3A4B5A00A28B0A /* Snap.swift */; };
 		F685F2031F27C61900927B01 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F685F2021F27C61900927B01 /* User.swift */; };
 		F6E510FF1EFDD272006CCA86 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E510FE1EFDD272006CCA86 /* SnapsViewController.swift */; };
 		F6E511011EFDD962006CCA86 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E511001EFDD962006CCA86 /* PictureViewController.swift */; };
@@ -35,6 +36,7 @@
 		F62B8BF11EFC382600749F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F62B8BF71EFC3C8200749F42 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F632520E1F06BF6600BFB3B1 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
+		F662540C1F3A4B5A00A28B0A /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		F685F2021F27C61900927B01 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F6E510FE1EFDD272006CCA86 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		F6E511001EFDD962006CCA86 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				F685F2021F27C61900927B01 /* User.swift */,
+				F662540C1F3A4B5A00A28B0A /* Snap.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				F62B8BE31EFC382600749F42 /* AppDelegate.swift in Sources */,
 				F6E511011EFDD962006CCA86 /* PictureViewController.swift in Sources */,
 				F685F2031F27C61900927B01 /* User.swift in Sources */,
+				F662540D1F3A4B5A00A28B0A /* Snap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
